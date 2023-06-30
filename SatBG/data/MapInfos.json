@@ -1,9 +1,9 @@
 [
 null,
 {"id":1,"expanded":true,"name":"SmashfaceTestWorld","order":2,"parentId":4,"scrollX":648.8,"scrollY":359.6},
-{"id":2,"expanded":true,"name":"WorldMap","order":7,"parentId":0,"scrollX":3239,"scrollY":1908.5},
+{"id":2,"expanded":true,"name":"WorldMap","order":7,"parentId":0,"scrollX":3344.3999999999996,"scrollY":1929,"quick":true},
 {"id":3,"expanded":false,"name":"GameStartScreen","order":5,"parentId":0,"scrollX":0,"scrollY":0},
-{"id":4,"expanded":true,"name":"DevAreas","order":1,"parentId":0,"scrollX":2780.5714285714284,"scrollY":1541.142857142857},
+{"id":4,"expanded":false,"name":"DevAreas","order":1,"parentId":0,"scrollX":973.1999999999999,"scrollY":539.4},
 {"id":5,"expanded":false,"name":"BlossomGardenAreas","order":8,"parentId":0,"scrollX":720.8888888888889,"scrollY":406.6666666666667},
 {"id":6,"expanded":false,"name":"IntroCutscene","order":6,"parentId":3,"scrollX":0,"scrollY":0},
 {"id":7,"expanded":true,"name":"SkartheTestMap","order":3,"parentId":1,"scrollX":595.6363636363636,"scrollY":486.90909090909093},
