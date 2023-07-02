@@ -3,5 +3,6 @@
 var $plugins =
 [
 {"name":"Theo_DisableTouchUI","status":true,"description":"Removes the touch UI and reposition the menu accordingly","parameters":{}},
-{"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}}
+{"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
+{"name":"wasdKeyMZ","status":true,"description":"It is a plugin that corresponds to the wasd move.","parameters":{}}
 ];
