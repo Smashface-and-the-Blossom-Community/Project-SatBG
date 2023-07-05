@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":true,"name":"SmashfaceTestWorld","order":2,"parentId":4,"scrollX":811,"scrollY":499.5},
-{"id":2,"expanded":true,"name":"WorldMap","order":8,"parentId":0,"scrollX":4113.818181818182,"scrollY":3022.3636363636365,"quick":true},
+{"id":2,"expanded":true,"name":"WorldMap","order":8,"parentId":0,"scrollX":4115,"scrollY":3096.5,"quick":true},
 {"id":3,"expanded":false,"name":"GameStartScreen","order":6,"parentId":0,"scrollX":1131,"scrollY":633.5},
 {"id":4,"expanded":true,"name":"DevAreas","order":1,"parentId":0,"scrollX":884.7272727272727,"scrollY":490.3636363636364},
 {"id":5,"expanded":true,"name":"BlossomGardenAreas","order":9,"parentId":0,"scrollX":648.8,"scrollY":359.6},
@@ -9,6 +9,9 @@ null,
 {"id":7,"expanded":false,"name":"SkartheTestMap","order":3,"parentId":1,"scrollX":982.8,"scrollY":633},
 {"id":8,"expanded":false,"name":"SkarthesTreasureRoom","order":4,"parentId":7,"scrollX":973.1999999999999,"scrollY":549},
 {"id":9,"expanded":false,"name":"InnTest","order":5,"parentId":1,"scrollX":0,"scrollY":0,"quick":false},
-{"id":10,"expanded":true,"name":"SpringTown","order":10,"parentId":5,"scrollX":1215.2727272727273,"scrollY":904.909090909091,"quick":false},
-{"id":11,"expanded":false,"name":"Hidden Cave","order":11,"parentId":10,"scrollX":1216.5,"scrollY":686.25,"quick":false}
+{"id":10,"expanded":true,"name":"SpringTown","order":10,"parentId":5,"scrollX":1216.5,"scrollY":674.25,"quick":false},
+{"id":11,"expanded":false,"name":"Hidden Cave","order":11,"parentId":10,"scrollX":811,"scrollY":449.5,"quick":false},
+{"id":12,"expanded":false,"name":"ShovelEmporium_ST","order":12,"parentId":10,"scrollX":816,"scrollY":624,"quick":false},
+{"id":13,"expanded":false,"name":"PUB_ST","order":13,"parentId":10,"scrollX":540.6666666666666,"scrollY":299.6666666666667,"quick":false},
+{"id":14,"expanded":false,"name":"Cliffords_ST","order":14,"parentId":10,"scrollX":540.6666666666666,"scrollY":299.6666666666667,"quick":false}
 ]
