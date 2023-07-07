@@ -179,5 +179,5 @@ null,
 {"id":177,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
 {"id":178,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
 {"id":179,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":180,"atypeId":5,"description":"Sakura's Crown. ","etypeId":5,"traits":[{"code":43,"dataId":27,"value":1}],"iconIndex":1806,"name":"Crown of Blossoms","note":"","params":[0,0,0,2,0,0,0,0],"price":0}
+{"id":180,"atypeId":6,"description":"Sakura's Crown. ","etypeId":5,"traits":[{"code":43,"dataId":52,"value":1}],"iconIndex":1806,"name":"Crown of Blossoms","note":"","params":[0,0,0,7,0,0,0,0],"price":0}
 ]
