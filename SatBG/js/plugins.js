@@ -4,5 +4,8 @@ var $plugins =
 [
 {"name":"Theo_DisableTouchUI","status":true,"description":"Removes the touch UI and reposition the menu accordingly","parameters":{}},
 {"name":"AltSaveScreen","status":true,"description":"Alternative save/load screen layout.","parameters":{}},
-{"name":"wasdKeyMZ","status":true,"description":"It is a plugin that corresponds to the wasd move.","parameters":{}}
+{"name":"wasdKeyMZ","status":true,"description":"It is a plugin that corresponds to the wasd move.","parameters":{}},
+{"name":"AltMenuScreen","status":true,"description":"Alternative menu screen layout.","parameters":{}},
+{"name":"MenuSubMembersMZ","status":true,"description":"Display sub members at menu window and map as followers","parameters":{"subMemberIdVal1":"0","subMemberIdVal2":"0","subMemberIdVal3":"0","subMemberIdVal4":"0","subMemberText":"Sub Members","displayIfNone":"false","subMemberNoneText":"None","DisplayOnMap":"false","additionalFollower":"8"}},
+{"name":"AltMenuScreen2MZ","status":false,"description":"[Ver1.4.0]Yet another menu screen layout","parameters":{"allowWindowDisp":"true","maxColsMenu":"4","commandRows":"2","commandCols":"4","isDisplayStatus":"true","doesDisplayNextLevel":"false","textNextLevel":"Next%1","statusStyle":"standard","display map name":"true","location string":"Location:","bgBitmapMenu":"","doesNotSetItemScene":"true","bgBitmapItem":"","doesNotSetSkillScene":"true","bgBitmapSkill":"","doesNotSetEquipScene":"true","bgBitmapEquip":"","doesNotSetStatusScene":"true","bgBitmapStatus":"","doesNotSetOptionScene":"true","bgBitmapOptions":"","doesNotSetSaveScene":"true","bgBitmapFile":"","doesNotSetEndScene":"true","bgBitmapGameEnd":"","doesNotSetShopScene":"false","bgBitmapShop":"","doesNotSetNameScene":"true","bgBitmapNameInput":"","bgUserDefined":""}}
 ];
