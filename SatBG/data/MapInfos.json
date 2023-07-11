@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":true,"name":"SmashfaceTestWorld","order":2,"parentId":4,"scrollX":1081.3333333333333,"scrollY":615.3333333333334},
-{"id":2,"expanded":true,"name":"WorldMap","order":8,"parentId":0,"scrollX":10783.5,"scrollY":4983.75,"quick":true},
+{"id":2,"expanded":true,"name":"WorldMap","order":8,"parentId":0,"scrollX":5277.599999999999,"scrollY":2307,"quick":true},
 {"id":3,"expanded":false,"name":"GameStartScreen","order":6,"parentId":0,"scrollX":3244,"scrollY":1798},
 {"id":4,"expanded":true,"name":"DevAreas","order":1,"parentId":0,"scrollX":1081.3333333333333,"scrollY":615.3333333333334},
 {"id":5,"expanded":false,"name":"BlossomGardenAreas","order":9,"parentId":2,"scrollX":540.6666666666666,"scrollY":319},
@@ -22,7 +22,7 @@ null,
 {"id":20,"expanded":false,"name":"IceyIceAreas","order":32,"parentId":2,"scrollX":0,"scrollY":0,"quick":false},
 {"id":21,"expanded":false,"name":"UnderWaterWorld","order":33,"parentId":2,"scrollX":884.7272727272727,"scrollY":490.3636363636364,"quick":false},
 {"id":22,"expanded":false,"name":"JungleForestAreas","order":34,"parentId":2,"scrollX":540.6666666666666,"scrollY":319,"quick":false},
-{"id":23,"expanded":true,"name":"SteampunkAreas","order":36,"parentId":2,"scrollX":884.7272727272727,"scrollY":490.3636363636364,"quick":false},
+{"id":23,"expanded":false,"name":"SteampunkAreas","order":36,"parentId":2,"scrollX":884.7272727272727,"scrollY":490.3636363636364,"quick":false},
 {"id":24,"expanded":false,"name":"LavaRidgeAreas","order":38,"parentId":2,"scrollX":884.7272727272727,"scrollY":490.3636363636364,"quick":false},
 {"id":25,"expanded":false,"name":"GoopCastle","order":39,"parentId":2,"scrollX":884.7272727272727,"scrollY":490.3636363636364,"quick":false},
 {"id":26,"expanded":false,"name":"RanchoFogz","order":20,"parentId":17,"scrollX":973.1999999999999,"scrollY":539.4,"quick":false},
@@ -38,5 +38,6 @@ null,
 {"id":36,"expanded":false,"name":"DM - Floor 2","order":29,"parentId":34,"scrollX":0,"scrollY":0,"quick":false},
 {"id":37,"expanded":false,"name":"DM - Floor 3","order":30,"parentId":34,"scrollX":0,"scrollY":0,"quick":false},
 {"id":38,"expanded":false,"name":"Dragons Peak","order":31,"parentId":34,"scrollX":0,"scrollY":0,"quick":false},
-{"id":39,"expanded":false,"name":"TrainYardWreck","order":37,"parentId":23,"scrollX":540.6666666666666,"scrollY":305,"quick":false}
+{"id":39,"expanded":false,"name":"TrainYardWreck","order":37,"parentId":23,"scrollX":540.6666666666666,"scrollY":305,"quick":false},
+{"id":40,"expanded":false,"name":"SmallIslandAreas","order":40,"parentId":2,"scrollX":973.1999999999999,"scrollY":539.4,"quick":false}
 ]
