@@ -28,7 +28,7 @@ null,
 {"id":26,"expanded":false,"name":"RanchoFogz","order":21,"parentId":17,"scrollX":728,"scrollY":457.3333333333333,"quick":false},
 {"id":27,"expanded":false,"name":"Murncos_ST","order":17,"parentId":10,"scrollX":720.8888888888889,"scrollY":399.55555555555554,"quick":false},
 {"id":28,"expanded":false,"name":"OptionalDungeonFTGorillaChan","order":38,"parentId":22,"scrollX":540.6666666666666,"scrollY":305,"quick":false},
-{"id":29,"expanded":true,"name":"Sandstorm Town","order":22,"parentId":17,"scrollX":1493,"scrollY":1286.5,"quick":false},
+{"id":29,"expanded":true,"name":"Sandstorm Town","order":22,"parentId":17,"scrollX":1391,"scrollY":1342.5,"quick":false},
 {"id":30,"expanded":false,"name":"Rinhs_ST","order":18,"parentId":10,"scrollX":1131,"scrollY":641.5,"quick":false},
 {"id":31,"expanded":false,"name":"Autumn Town","order":26,"parentId":18,"scrollX":0,"scrollY":0,"quick":false},
 {"id":32,"expanded":false,"name":"Corvus Dungeon","order":27,"parentId":18,"scrollX":0,"scrollY":0,"quick":false},
@@ -43,5 +43,5 @@ null,
 {"id":41,"expanded":false,"name":"AlmaBrumosa","order":24,"parentId":17,"scrollX":1489.2,"scrollY":1425,"quick":false},
 {"id":42,"expanded":false,"name":"ClockworkCity","order":41,"parentId":23,"scrollX":1390.2857142857142,"scrollY":1615.7142857142856,"quick":false},
 {"id":43,"expanded":false,"name":"Espon's Area","order":6,"parentId":4,"scrollX":1131,"scrollY":633.5,"quick":false},
-{"id":44,"expanded":false,"name":"Cliffords_SST","order":23,"parentId":29,"scrollX":720.8888888888889,"scrollY":406.6666666666667,"quick":false}
+{"id":44,"expanded":false,"name":"Cliffords_SST","order":23,"parentId":29,"scrollX":546,"scrollY":319,"quick":false}
 ]
