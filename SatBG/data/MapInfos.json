@@ -1,15 +1,15 @@
 [
 null,
 {"id":1,"expanded":false,"name":"SmashfaceTestWorld","order":2,"parentId":4,"scrollX":784.8,"scrollY":615.6},
-{"id":2,"expanded":true,"name":"WorldMap","order":9,"parentId":0,"scrollX":5654.4,"scrollY":2817.2,"quick":true},
-{"id":3,"expanded":false,"name":"GameStartScreen","order":7,"parentId":0,"scrollX":3244,"scrollY":1798},
-{"id":4,"expanded":true,"name":"DevAreas","order":1,"parentId":0,"scrollX":648.8,"scrollY":359.6},
+{"id":2,"expanded":true,"name":"WorldMap","order":9,"parentId":0,"scrollX":5654,"scrollY":2737.5,"quick":true},
+{"id":3,"expanded":false,"name":"GameStartScreen","order":7,"parentId":0,"scrollX":1131,"scrollY":633.5},
+{"id":4,"expanded":true,"name":"DevAreas","order":1,"parentId":0,"scrollX":1131,"scrollY":633.5},
 {"id":5,"expanded":true,"name":"BlossomIslandAreas","order":10,"parentId":2,"scrollX":540.6666666666666,"scrollY":319},
 {"id":6,"expanded":false,"name":"IntroCutscene","order":8,"parentId":3,"scrollX":0,"scrollY":0},
 {"id":7,"expanded":true,"name":"SkartheTestMap","order":3,"parentId":1,"scrollX":1081.3333333333333,"scrollY":947.3333333333334},
 {"id":8,"expanded":false,"name":"SkarthesTreasureRoom","order":4,"parentId":7,"scrollX":1081.3333333333333,"scrollY":615.3333333333334},
 {"id":9,"expanded":false,"name":"InnTest","order":5,"parentId":1,"scrollX":1081.3333333333333,"scrollY":615.3333333333334,"quick":false},
-{"id":10,"expanded":true,"name":"SpringTown","order":12,"parentId":5,"scrollX":1130.4,"scrollY":1064.4,"quick":false},
+{"id":10,"expanded":true,"name":"SpringTown","order":12,"parentId":5,"scrollX":1139,"scrollY":798.5,"quick":false},
 {"id":11,"expanded":false,"name":"Hidden Cave","order":13,"parentId":10,"scrollX":648.8,"scrollY":359.6,"quick":false},
 {"id":12,"expanded":false,"name":"ShovelEmporium_ST","order":14,"parentId":10,"scrollX":540.6666666666666,"scrollY":319,"quick":false},
 {"id":13,"expanded":false,"name":"PUB_ST","order":15,"parentId":10,"scrollX":648.8,"scrollY":366,"quick":false},
@@ -42,5 +42,5 @@ null,
 {"id":40,"expanded":false,"name":"SmallIslandAreas","order":43,"parentId":2,"scrollX":973.1999999999999,"scrollY":539.4,"quick":false},
 {"id":41,"expanded":false,"name":"AlmaBrumosa","order":23,"parentId":17,"scrollX":1489.2,"scrollY":1425,"quick":false},
 {"id":42,"expanded":false,"name":"ClockworkCity","order":40,"parentId":23,"scrollX":2162.6666666666665,"scrollY":1220,"quick":false},
-{"id":43,"expanded":false,"name":"Espon's Area","order":6,"parentId":4,"scrollX":648.8,"scrollY":359.6,"quick":false}
+{"id":43,"expanded":false,"name":"Espon's Area","order":6,"parentId":4,"scrollX":1131,"scrollY":633.5,"quick":false}
 ]
