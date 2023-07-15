@@ -32,6 +32,7 @@ var $plugins =
 {"name":"RegionBase","status":true,"description":"Region Base Plugin","parameters":{"regionList":"[]","terrainTagList":"[]"}},
 {"name":"MOG_EventSensor","status":true,"description":"(v1.0) Sistema de distância de eventos.","parameters":{"Self Switch Key":"D"}},
 {"name":"MOG_EventText","status":true,"description":"(v1.0) Adiciona um texto em cima do evento.","parameters":{"X axis":"0","Y axis":"0","Font Size":"18"}},
+{"name":"RemoveDamageFloorFlashing","status":true,"description":"Remove screen flashing from damage floors","parameters":{}},
 {"name":"---VISUAL---","status":false,"description":"","parameters":{}},
 {"name":"MOG_CharShatterEffect","status":true,"description":"(v1.0) Cria o efeito de shatter nos sprites dos characters.","parameters":{}},
 {"name":"MOG_MapNameHud","status":true,"description":"(v1.1) Apresenta uma Hud com o nome do mapa.","parameters":{"Hud X-Axis":"250","Hud Y-Axis":"60","Name X-Axis":"80","Name Y-Axis":"15","Duration":"160","Font Size":"20","Font Italic":"false","Slide Animation":"true","Zoom Animation":"false","Zoom Text Animation":"true","Particle Animation":"true","Particles Number":"15","Circle Animation":"true","Circle X-Axis":"-120","Circle Y-Axis":"0","Circle Z-Index":"0","Circle Rotation Speed":"0.01"}},
