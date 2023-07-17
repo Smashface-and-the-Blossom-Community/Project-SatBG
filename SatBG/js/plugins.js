@@ -43,5 +43,6 @@ var $plugins =
 {"name":"MOG_CharShatterEffect","status":true,"description":"(v1.0) Cria o efeito de shatter nos sprites dos characters.","parameters":{}},
 {"name":"MOG_MapNameHud","status":true,"description":"(v1.1) Apresenta uma Hud com o nome do mapa.","parameters":{"Hud X-Axis":"250","Hud Y-Axis":"60","Name X-Axis":"80","Name Y-Axis":"15","Duration":"160","Font Size":"20","Font Italic":"false","Slide Animation":"true","Zoom Animation":"false","Zoom Text Animation":"true","Particle Animation":"true","Particles Number":"15","Circle Animation":"true","Circle X-Axis":"-120","Circle Y-Axis":"0","Circle Z-Index":"0","Circle Rotation Speed":"0.01"}},
 {"name":"MOG_Weather_EX","status":true,"description":"(v1.4) Adiciona novos efeitos de climas.","parameters":{"Battle Weather":"true"}},
-{"name":"---TITLE---","status":false,"description":"","parameters":{}}
+{"name":"---TITLE---","status":false,"description":"","parameters":{}},
+{"name":"CGMZ_ExitToDesktop","status":true,"description":"Adds options to close the game window (exit to desktop)","parameters":{"Command Name":"Exit Game","Hide in Browser":"true"}}
 ];
