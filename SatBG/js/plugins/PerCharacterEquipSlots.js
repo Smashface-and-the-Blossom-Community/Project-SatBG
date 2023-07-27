@@ -22,7 +22,7 @@
             slots = rawSlotConfig.split(",").map((value) => parseInt(value));
         }
         else {
-            slots = _original_equipslots.bind(this)();
+            slots = _original_equipslots.call(this);
         }
 
         return slots;
