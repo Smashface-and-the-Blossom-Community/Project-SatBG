@@ -38,7 +38,7 @@
             }
         }
 
-        if (that._collapseDelayCounter >= that._collapseDelay) {
+        if (!that._collapseDelay || that._collapseDelayCounter >= that._collapseDelay) {
             updateFunction.call(that);
         }
         else {
