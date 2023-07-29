@@ -35,6 +35,7 @@ var $plugins =
 {"name":"MOG_EmergeMotion","status":true,"description":"(v1.0) Adiciona a animação dos inimigos emergindo.","parameters":{"Initial Wait":"15","Wait for the Next":"5"}},
 {"name":"MOG_SkipWindowLog","status":true,"description":"(v1.0) Desativa a janela de Log.","parameters":{"Lag Time":"10","Display Start Message":"false","Display Preemptive Message":"true"}},
 {"name":"CustomCastingAnimation","status":true,"description":"On skill activation play custom animation on top of caster\r\ndefined by notes tag. e.g. <casting_anim: 125>","parameters":{}},
+{"name":"DelayCollapse","status":true,"description":"Allows for delaying the collapse effect of an enemy by a given number of frames. e.g. <collapse_delay:220>","parameters":{}},
 {"name":"---GAMEPLAY---","status":false,"description":"","parameters":{}},
 {"name":"wasdKeyMZ","status":true,"description":"It is a plugin that corresponds to the wasd move.","parameters":{}},
 {"name":"RegionBase","status":true,"description":"Region Base Plugin","parameters":{"regionList":"[]","terrainTagList":"[]"}},
