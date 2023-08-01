@@ -11,10 +11,10 @@
  * Become a Patron to get access to beta/alpha plugins plus other goodies!
  * https://www.patreon.com/CasperGamingRPGM
  * ============================================================================
- * Version: 1.9.0
+ * Version: 1.10.0
  * ----------------------------------------------------------------------------
  * Compatibility: Only tested with my CGMZ plugins.
- * Made for RPG Maker MZ 1.6.0
+ * Made for RPG Maker MZ 1.7.0
  * ----------------------------------------------------------------------------
  * Description: This is the core CGMZ plugin which is used extensively
  * by other CGMZ plugins and is likely to be required.
@@ -136,6 +136,11 @@
  * - Added utility function for opening URLs
  * - Fix outdated plugin message for alpha/beta plugins
  *
+ * 1.10.0:
+ * - Expanded function for getting item data objects to include skill/states
+ * - Added locale options
+ * - Moved date functions to CGMZ_Utils from CGMZ_Temp
+ *
  * @command Initialize
  * @desc Re-initializes some CGMZ Classes. Only call this if you know what you
  * are doing. Will reset all CGMZ Data as if you started a new game.
@@ -164,6 +169,13 @@
  * @type boolean
  * @desc If set to true, this will cause the game to think you are NOT playtesting even when launched in editor
  * @default false
+ *
+ * @param Force Locale
+ * @desc Forces the game to use this locale type (if blank, will use the user's local locale type)
+ *
+ * @param Fallback Locale
+ * @desc The locale type to fall back to for use in locale strings.
+ * @default en-US
 */
 /*:es
  * @author Casper Gaming
@@ -180,10 +192,10 @@
  * alfa, ademas de otras cosas geniales!
  * https://www.patreon.com/CasperGamingRPGM
  * ============================================================================
- * Versión: 1.9.0
+ * Versión: 1.10.0
  * ----------------------------------------------------------------------------
  * Compatibilidad: Sólo probado con mis CGMZ plugins.
- * Hecho para RPG Maker MZ 1.6.0
+ * Hecho para RPG Maker MZ 1.7.0
  * ----------------------------------------------------------------------------
  * Descripción: Este es el plugin principal de CGMZ que otros plugin de CGMZ 
  * utilizan ampliamente y es probable que sea necesario.
@@ -310,6 +322,11 @@
  * - Added utility function for opening URLs
  * - Fix outdated plugin message for alpha/beta plugins
  *
+ * 1.10.0:
+ * - Expanded function for getting item data objects to include skill/states
+ * - Added locale options
+ * - Moved date functions to CGMZ_Utils from CGMZ_Temp
+ *
  * @command Initialize
  * @text Inicializar 
  * @desc Reinicializa algunas clases de CGMZ. Solo llama a esto si sabes lo que
@@ -344,12 +361,19 @@
  * @type boolean
  * @desc Si se establece en verdadero, esto hará que el juego piense que NO estás probando incluso cuando se inicia en el editor.
  * @default false
+ *
+ * @param Force Locale
+ * @desc Forces the game to use this locale type (if blank, will use the user's local locale type)
+ *
+ * @param Fallback Locale
+ * @desc The locale type to fall back to for use in locale strings.
+ * @default es
 */
 var Imported = Imported || {};
 Imported.CGMZ_Core = true;
 var CGMZ = CGMZ || {};
 CGMZ.Versions = CGMZ.Versions || {};
-CGMZ.Versions["CGMZ Core"] = "1.9.0";
+CGMZ.Versions["CGMZ Core"] = "1.10.0";
 CGMZ.Core = {};
 CGMZ.Core.parameters = PluginManager.parameters('CGMZ_Core');
 CGMZ.Core.CheckForUpdates = (CGMZ.Core.parameters["Check for Updates"] === "true");
@@ -357,6 +381,8 @@ CGMZ.Core.ShowDevTools = (CGMZ.Core.parameters["Dev Tools on Start"] === "true")
 CGMZ.Core.StartFullscreen = (CGMZ.Core.parameters["Fullscreen"] === "true");
 CGMZ.Core.ShowFPSCounter = (CGMZ.Core.parameters["Show FPS Counter"] === "true");
 CGMZ.Core.SimulateProductionEnv = (CGMZ.Core.parameters["Simulate Production Env"] === "true");
+CGMZ.Core.ForceLanguage = CGMZ.Core.parameters["Force Locale"];
+CGMZ.Core.FallbackLanguage = CGMZ.Core.parameters["Fallback Locale"];
 //=============================================================================
 // CGMZ_Utils
 //-----------------------------------------------------------------------------
@@ -408,6 +434,63 @@ CGMZ_Utils.openURL = function(url) {
 	(Utils.isNwjs()) ? require('nw.gui').Shell.openExternal(url) : window.open(url);
 };
 //-----------------------------------------------------------------------------
+// Check if can get the user's language
+//-----------------------------------------------------------------------------
+CGMZ_Utils.canUseUserLanguage = function() {
+	return !!(navigator && navigator.language);
+};
+//-----------------------------------------------------------------------------
+// Get the user's language, default to "en-US" if no language detected
+//-----------------------------------------------------------------------------
+CGMZ_Utils.userLocale = function() {
+	return (CGMZ.Core.ForceLanguage) ? CGMZ.Core.ForceLanguage : this.canUseUserLanguage() ? navigator.language : CGMZ.Core.FallbackLanguage;
+};
+//-----------------------------------------------------------------------------
+// Creates a locale date string from a given date and in expected format
+//-----------------------------------------------------------------------------
+CGMZ_Utils.createDateText = function(format = 0, date = new Date(Date.now())) {
+	const locale = this.userLocale();
+	const options = this.makeDateOptions(format);
+	return date.toLocaleString(locale, options);
+};
+//-----------------------------------------------------------------------------
+// Make the options for the date string
+//-----------------------------------------------------------------------------
+CGMZ_Utils.makeDateOptions = function(format) {
+	const options = {};
+	switch(format) {
+		case 0:
+		case 1:
+		case 2:
+			options.day = "numeric";
+			options.month = "numeric";
+			options.year = "numeric";
+			break;
+		case 3:
+		case 4:
+			options.day = "numeric";
+			options.month = "long";
+			options.year = "numeric";
+			break;
+		case 5:
+		case 6:
+			options.day = "numeric";
+			options.month = "short";
+			options.year = "numeric";
+			break;
+		case 7:
+		case 8:
+			options.day = "numeric";
+			options.month = "numeric";
+			break;
+		default:
+			options.day = "numeric";
+			options.month = "numeric";
+			options.year = "numeric";
+	}
+	return options;
+};
+//-----------------------------------------------------------------------------
 // Takes a number and returns it's toLocaleString value
 //-----------------------------------------------------------------------------
 CGMZ_Utils.numberSplit = function(num) {
@@ -424,13 +507,15 @@ CGMZ_Utils.timeSplit = function(frameCount) {
     return hours.padZero(2) + ':' + minutes.padZero(2) + ':' + seconds.padZero(2);
 };
 //-----------------------------------------------------------------------------
-// Look up item given type and id
+// Look up data item given type and id
 //-----------------------------------------------------------------------------
 CGMZ_Utils.lookupItem = function(type, id) {
 	switch(type) {
 		case 'item': return $dataItems[id];
 		case 'weapon': return $dataWeapons[id];
 		case 'armor': return $dataArmors[id];
+		case 'skill': return $dataSkills[id];
+		case 'state': return $dataStates[id];
 	}
 	this.reportError("Item type setup incorrectly", "CGMZ Core", "Check item parameters set up through CGMZ plugins");
 	return null;
@@ -751,6 +836,8 @@ CGMZ_Temp.prototype.approximateTimeValueToUnit = function(seconds, unitString) {
 // 6: DD Mon. YYYY   (ex: 20 Jan 2001)
 // 7: MM/DD          (ex: 1/20)
 // 8: DD/MM          (ex: 20/1)
+// Deprecated. Use CGMZ_Utils.createDateText instead. Please be aware of 
+// changes to function arguments and usage
 //-----------------------------------------------------------------------------
 CGMZ_Temp.prototype.createDateText = function(day, month, year, format, delim) {
 	switch(format) {
@@ -769,6 +856,7 @@ CGMZ_Temp.prototype.createDateText = function(day, month, year, format, delim) {
 };
 //-----------------------------------------------------------------------------
 // Convert javascript getMonth int to full name of month string
+// Deprecated. See CGMZ_Temp.createDateText for more info
 //-----------------------------------------------------------------------------
 CGMZ_Temp.prototype.getFullMonthName = function(month) {
 	switch(month) {
@@ -790,6 +878,7 @@ CGMZ_Temp.prototype.getFullMonthName = function(month) {
 };
 //-----------------------------------------------------------------------------
 // Convert javascript getMonth int to abbreviated name of month string
+// Deprecated. See CGMZ_Temp.createDateText for more info
 //-----------------------------------------------------------------------------
 CGMZ_Temp.prototype.getShortMonthName = function(month) {
 	switch(month) {
