@@ -1,7 +1,7 @@
 [
 null,
 {"id":1,"expanded":false,"name":"SmashfaceTestWorld","order":2,"parentId":4,"scrollX":1622,"scrollY":899},
-{"id":2,"expanded":true,"name":"WorldMapPostAlma","order":10,"parentId":0,"scrollX":4866,"scrollY":2697,"quick":true},
+{"id":2,"expanded":true,"name":"WorldMapPostAlma","order":10,"parentId":0,"scrollX":5561.142857142857,"scrollY":3082.285714285714,"quick":true},
 {"id":3,"expanded":true,"name":"GameStartScreen","order":7,"parentId":0,"scrollX":1081.3333333333333,"scrollY":610},
 {"id":4,"expanded":false,"name":"DevAreas","order":1,"parentId":0,"scrollX":1390.2857142857142,"scrollY":799.7142857142857},
 {"id":5,"expanded":true,"name":"BlossomIsland","order":11,"parentId":2,"scrollX":1769.4545454545455,"scrollY":980.7272727272727},
@@ -121,5 +121,5 @@ null,
 {"id":119,"expanded":false,"name":"ABBasementFloor","order":45,"parentId":41,"scrollX":1081.3333333333333,"scrollY":851.3333333333334,"quick":false},
 {"id":120,"expanded":false,"name":"SphinxTrap","order":50,"parentId":59,"scrollX":1404,"scrollY":770.5714285714286,"quick":false},
 {"id":121,"expanded":false,"name":"SphinxSunken","order":51,"parentId":56,"scrollX":1404,"scrollY":1615.7142857142856,"quick":false},
-{"id":122,"expanded":true,"name":"WorldMapPreAlma","order":9,"parentId":0,"scrollX":4325.333333333333,"scrollY":2397.3333333333335,"quick":true}
+{"id":122,"expanded":true,"name":"WorldMapPreAlma","order":9,"parentId":0,"scrollX":5062.8,"scrollY":4559.4,"quick":true}
 ]
