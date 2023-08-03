@@ -39,7 +39,7 @@ var $plugins =
 {"name":"DelayCollapse","status":true,"description":"Allows for delaying the collapse effect of an enemy by a given number of frames. e.g. <collapse_delay:220>","parameters":{}},
 {"name":"---GAMEPLAY---","status":false,"description":"","parameters":{}},
 {"name":"wasdKeyMZ","status":true,"description":"It is a plugin that corresponds to the wasd move.","parameters":{}},
-{"name":"RegionBase","status":true,"description":"Region Base Plugin","parameters":{"regionList":"[]","terrainTagList":"[]"}},
+{"name":"RegionBase","status":false,"description":"Region Base Plugin","parameters":{"regionList":"[]","terrainTagList":"[]"}},
 {"name":"MOG_EventSensor","status":true,"description":"(v1.0) Sistema de distância de eventos.","parameters":{"Self Switch Key":"D"}},
 {"name":"MOG_EventText","status":true,"description":"(v1.0) Adiciona um texto em cima do evento.","parameters":{"X axis":"0","Y axis":"0","Font Size":"18"}},
 {"name":"RemoveDamageFloorFlashing","status":true,"description":"Remove screen flashing from damage floors, play a sound instead, and (by default) reduce damage to 1 instead of 10 per step","parameters":{"basicFloorDamage":"1"}},
