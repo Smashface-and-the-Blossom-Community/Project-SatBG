@@ -24,8 +24,6 @@
     }
 
     let _checkDelayAndUpdateCollapse = function(that, updateFunction) {
-        console.log(`_collapseDelayCounter: ${that._collapseDelayCounter}`);
-
         if (!that._collapseDelay) {
             const rawDelay = that._enemy.enemy().meta.collapse_delay;
     
