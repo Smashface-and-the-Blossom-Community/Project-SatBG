@@ -1,6 +1,6 @@
 //=============================================================================
 // Plugin for RPG Maker MZ
-// HideNamelessEncyclopediaItems.js
+// DamageOverTimeFormula.js
 //=============================================================================
 /*:
  * @target MZ
@@ -13,6 +13,7 @@
  * To optionally apply a variance to the result of that calculation, use <dotdmgvar>. e.g. <dotdmgvar:0.05>
  * 
  * Note:
+ * * This only applies when the configured states are applied as a result of battler (party/enemy) actions
  * * The base amount of damage will be computed when the state is applied, but the variance will be re-applied to it on each tick of the damage
  * * If <dotdmg> is not specified, <dotdmgvar> will be ignored.
  * * If <dotdmgvar> is not specified, no variance will be applied
