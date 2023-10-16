@@ -3,7 +3,7 @@
 var $plugins =
 [
 {"name":"---CORE---","status":false,"description":"","parameters":{}},
-{"name":"CGMZ_Core","status":true,"description":"Core CGMZ Plugin, should be placed above all other CGMZ Plugins.","parameters":{"Check for Updates":"true","Dev Tools on Start":"false","Show FPS Counter":"false","Fullscreen":"true","Simulate Production Env":"false"}},
+{"name":"CGMZ_Core","status":true,"description":"Core CGMZ Plugin, should be placed above all other CGMZ Plugins.","parameters":{"Check for Updates":"true","Dev Tools on Start":"false","Show FPS Counter":"false","Fullscreen":"false","Simulate Production Env":"false","Force Locale":"","Fallback Locale":"en-US"}},
 {"name":"PluginCommonBase","status":true,"description":"Plugin Analysis Common Base","parameters":{}},
 {"name":"---MENU---","status":false,"description":"","parameters":{}},
 {"name":"Theo_DisableTouchUI","status":true,"description":"Removes the touch UI and reposition the menu accordingly","parameters":{}},
